@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes:
+      - ./config:/config  # Папка с конфигурацией Home Assistant
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "8123:8123"  # Web-интерфейс Home Assistant
+    environment:
+      - TZ=Europe/Moscow
+    restart: unless-stopped
+    privileged: true  # Позволяет Home Assistant работать с сетевыми интерфейсами, если потребуется
