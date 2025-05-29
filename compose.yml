@@ -7,6 +7,7 @@ services:
     volumes:
       - ./config:/config  # Папка с конфигурацией Home Assistant
       - /etc/localtime:/etc/localtime:ro
+      - ./scud_door:/config/custom_components/scud_door
     ports:
       - "8123:8123"  # Web-интерфейс Home Assistant
     environment:
