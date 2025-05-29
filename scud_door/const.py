@@ -1,2 +1,0 @@
-DOMAIN = 'scud_door'
-SCAN_INTERVAL = 30

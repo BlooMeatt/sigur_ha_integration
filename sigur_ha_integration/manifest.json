@@ -1,9 +1,9 @@
 {
-  "domain": "scud_door",
+  "domain": "sigur_ha",
   "name": "SIGUR Door Controller",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "config_flow": true,
-  "documentation": "https://github.com/bloomeatt/homeassistant-scud-door",
+  "documentation": "https://github.com/BlooMeatt/sigur_ha_integration",
   "requirements": [],
   "codeowners": ["@bloomeatt"],
   "iot_class": "local_polling",

@@ -1,0 +1,2 @@
+DOMAIN = 'sigur_ha'
+SCAN_INTERVAL = 30
